@@ -1,5 +1,5 @@
 // Import React
-import React from "react";
+import React, { Component } from "react";
 import { AboutMe, Formidable } from "./aboutme";
 import {
   A11yIntro,
@@ -9,34 +9,11 @@ import {
   Why,
   WhyBusiness1,
   WhyBusiness2,
-  WhyBusiness3,
+  WhyBusiness3
 } from "./aboutA11y";
-import { GettingStartedIntro, Axe, DesignTools, DevTools } from "./gettingStarted";
-import { TestYourSiteIntro } from "./testYourSite";
-import { BreakdownIntro, Checklists, StartNow, ByComponent, ByPage } from "./breakdown";
-import {
-  RealWorldApplication,
-  ButtonLinkDiv,
-  DesignAffectsCodeCheckbox,
-  DesignAffectsCodeMultiselect,
-} from "./a11yDecisions";
+
 // Import Spectacle Core tags
-import {
-  Appear,
-  BlockQuote,
-  Cite,
-  Deck,
-  Fill,
-  Heading,
-  Layout,
-  Link,
-  ListItem,
-  List,
-  Notes,
-  Quote,
-  Slide,
-  Text,
-} from "spectacle";
+import { Deck, Fill, Heading, Layout, Link, Notes, Slide, Text } from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -46,7 +23,7 @@ import createTheme from "spectacle/lib/themes/default";
 import styles from "./styles";
 const images = {
   JenDevDesk: require("../assets/aboutme/JensDesk.jpg"),
-  JenDeskColor: require("../assets/aboutme/JensDeskColor.jpg"),
+  JenDeskColor: require("../assets/aboutme/JensDeskColor.jpg")
 };
 preloader(images);
 
@@ -60,14 +37,15 @@ const themeColors = {
   dktertiary: "deepskyblue",
   quartenary: "#FAFAFA",
   faded: "#CCCCCC",
-  background: "linear-gradient(#F8FAFA, #D8DADA)",
+  background: "linear-gradient(#F8FAFA, #D8DADA)"
 };
 
 const theme = createTheme(themeColors, {
-  primary: "Raleway",
+  primary: "Raleway"
 });
 
-export default class Presentation extends React.Component {
+const slideUrl = "http://be-a-react-native-a11y.surge.sh";
+export default class Presentation extends Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
@@ -78,30 +56,21 @@ export default class Presentation extends React.Component {
             be-a-react-native-a11y.surge.sh
           </Notes>
           <Layout style={styles.flexCol}>
-            <Fill style={styles.spacePlease}>
-              <Heading caps size={2} textColor="primary" style={{ textShadow: "1px 1px" + " 6px #111" }}>
+            <Fill style={[styles.spacePlease]}>
+              <Heading fit textColor="primary" style={{ textShadow: "1px 1px 6px #111" }}>
                 Be a React Native A11y
               </Heading>
             </Fill>
             <Fill style={styles.spacePlease}>
-              <Link textColor="dktertiary" style={styles.smallText} href="http://a11y-sprint-filler.surge.sh">
-                Follow along with the slides: http://be-a-react-native-a11y.surge.sh
+              <Link textColor="dktertiary" style={styles.smallText} href={slideUrl}>
+                Follow along with the slides: {slideUrl}
               </Link>
-              {/* <br />
-							<Link
-								textColor="dktertiary"
-								style={styles.smallText}
-								href="https://youtu.be/1H8TO1fVuLY"
-							>
-								Video is available on YouTube:
-								https://youtu.be/1H8TO1fVuLY
-							</Link> */}
             </Fill>
           </Layout>
         </Slide>
 
         {/* About Me Slides */}
-        <AboutMe />
+        <AboutMe slideUrl={slideUrl} />
         <Formidable />
 
         {/* 5 W's of Accessibility */}
@@ -113,28 +82,6 @@ export default class Presentation extends React.Component {
         <WhyBusiness1 />
         <WhyBusiness2 />
         <WhyBusiness3 />
-
-        {/* How do we get started? */}
-        <GettingStartedIntro />
-        <Axe />
-        <DesignTools />
-        <DevTools />
-
-        {/* Test Your Site */}
-        <TestYourSiteIntro />
-
-        {/* That seems like a lot. How do we break it down? */}
-        <BreakdownIntro />
-        <Checklists />
-        <StartNow />
-        <ByComponent />
-        <ByPage />
-
-        {/* How design affects code affects accessibility */}
-        <RealWorldApplication />
-        <ButtonLinkDiv />
-        <DesignAffectsCodeCheckbox />
-        <DesignAffectsCodeMultiselect />
 
         {/* Conclusion */}
         <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>
