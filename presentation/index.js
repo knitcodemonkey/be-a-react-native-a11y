@@ -40,14 +40,14 @@ preloader(images);
 require("normalize.css");
 
 const themeColors = {
-  primary: "#FAFAFA",
+  primary: "#fff",
   secondary: "#191919",
   red: "#FF4E33",
   green: "#2FC12F",
   links: "deepskyblue",
-  dktertiary: "deepskyblue",
+  dktertiary: "#FF4E33",
   quartenary: "#FAFAFA",
-  faded: "#CCCCCC",
+  faded: "#bbb",
   background: "linear-gradient(#F8FAFA, #D8DADA)"
 };
 
@@ -55,7 +55,7 @@ const theme = createTheme(themeColors, {
   primary: "Raleway"
 });
 
-const slideUrl = "http://be-a-react-native-a11y.surge.sh";
+const slideUrl = "https://be-a-react-native-a11y.surge.sh";
 export default class Presentation extends Component {
   render() {
     return (
@@ -78,12 +78,17 @@ export default class Presentation extends Component {
               </Heading>
             </Fill>
             <Fill style={styles.spacePlease}>
-              <Link
-                textColor="dktertiary"
-                style={styles.smallText}
-                href={slideUrl}
+              <Text
+                textColor="primary"
+                style={[
+                  styles.smallText,
+                  { display: "inline-block", marginRight: 10 }
+                ]}
               >
-                Follow along with the slides: {slideUrl}
+                Follow along with the slides:
+              </Text>
+              <Link textColor="links" style={styles.links} href={slideUrl}>
+                {slideUrl}
               </Link>
             </Fill>
           </Layout>
@@ -105,22 +110,29 @@ export default class Presentation extends Component {
 
         {/* Conclusion */}
         <Slide
-          bgColor="#000000"
+          bgColor="#070707"
           style={{ width: "100%", position: "relative" }}
         >
-          <Text
-            textColor="dktertiary"
-            style={[styles.largeText, styles.littleSpacePlease]}
-          >
-            Accessibility isn't for just a select few. It's for everybody. It's
-            for you.
-          </Text>
           <Heading
             size={2}
-            textColor="primary"
+            textColor="dktertiary"
             style={styles.littleSpacePlease}
           >
-            Thank you
+            Accessibility isn't for just a select few.
+          </Heading>
+          <Heading
+            size={2}
+            textColor="dktertiary"
+            style={styles.littleSpacePlease}
+          >
+            It's for everybody.
+          </Heading>
+          <Heading
+            size={2}
+            textColor="green"
+            style={[styles.littleSpacePlease, { fontStyle: "italic" }]}
+          >
+            It's for you.
           </Heading>
         </Slide>
       </Deck>

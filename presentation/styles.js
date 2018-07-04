@@ -30,7 +30,7 @@ const Styles = {
     textShadow: "1px 1px 6px #111"
   },
   extraSmallText: {
-    fontSize: "1.2rem",
+    fontSize: "1.4rem",
     lineHeight: "1.6rem",
     textShadow: "1px 1px 4px #111"
   },
@@ -43,10 +43,12 @@ const Styles = {
     lineHeight: "1.6em",
     marginBottom: 4
   },
-  accessibilityLinks: {
-    fontSize: "1.2em",
-    lineHeight: "1.2em",
-    padding: "12px 0px"
+  links: {
+    zIndex: 10,
+    fontSize: "2rem",
+    lineHeight: "2.4rem",
+    textShadow: "1px 1px 4px #111",
+    textDecoration: "underline"
   }
 };
 

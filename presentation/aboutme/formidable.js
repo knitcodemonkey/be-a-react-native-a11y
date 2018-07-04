@@ -23,7 +23,8 @@ export default class AboutMe extends React.Component {
     return (
       <Slide
         bgImage={images.formidableHero}
-        bgColor="#000000"
+        bgColor="#070707"
+        bgDarken={0.1}
         style={{ width: "100%", position: "relative" }}
       >
         <Image src={images.formidable} style={{ width: "100%" }} />

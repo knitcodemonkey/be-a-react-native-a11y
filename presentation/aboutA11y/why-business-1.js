@@ -16,11 +16,15 @@ require("normalize.css");
 export default class WhyBusiness extends React.Component {
   render() {
     return (
-      <Slide bgImage={images.wheelchair} bgDarken={0.7}>
+      <Slide bgImage={images.wheelchair} bgDarken={0.8}>
         <Notes>
           <p>So, what is disability?</p>
         </Notes>
-        <Heading size={2} textColor="dktertiary" style={{ textShadow: "1px 1px 6px #222" }}>
+        <Heading
+          size={2}
+          textColor="dktertiary"
+          style={{ textShadow: "1px 1px 6px #222" }}
+        >
           Why should the business care?
         </Heading>
       </Slide>

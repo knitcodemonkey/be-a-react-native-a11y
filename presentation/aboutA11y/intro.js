@@ -22,9 +22,7 @@ export default class A11yIntro extends React.Component {
         <Heading
           textColor="quartenary"
           style={{
-            marginBottom: -70,
-            zIndex: 10,
-            position: "relative"
+            marginBottom: -70
           }}
         >
           Accessibility
@@ -34,13 +32,13 @@ export default class A11yIntro extends React.Component {
           style={{
             width: "100%",
             marginBottom: -70,
-            zIndex: 0,
+            zIndex: -1,
             position: "relative"
           }}
         />
         <Link
-          textColor="dktertiary"
-          style={[{ zIndex: 10, position: "relative", textDecoration: "underline" }, styles.extraSmallText]}
+          textColor="links"
+          style={styles.links}
           href="https://www.microsoft.com/en-us/design/inclusive"
         >
           Image Credit: Inclusive Design at Microsoft
