@@ -18,11 +18,11 @@ preloader(images);
 export default class A11yIntro extends React.Component {
   render() {
     return (
-      <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>
+      <Slide bgColor="#070707" style={{ width: "100%", position: "relative" }}>
         <Heading
           textColor="quartenary"
           style={{
-            marginBottom: -100,
+            marginBottom: -70,
             zIndex: 10,
             position: "relative"
           }}
@@ -33,14 +33,14 @@ export default class A11yIntro extends React.Component {
           src={images.accessibilityGif}
           style={{
             width: "100%",
-            marginBottom: -90,
+            marginBottom: -70,
             zIndex: 0,
             position: "relative"
           }}
         />
         <Link
           textColor="dktertiary"
-          style={[{ zIndex: 10, position: "relative" }, styles.smallText]}
+          style={[{ zIndex: 10, position: "relative", textDecoration: "underline" }, styles.extraSmallText]}
           href="https://www.microsoft.com/en-us/design/inclusive"
         >
           Image Credit: Inclusive Design at Microsoft

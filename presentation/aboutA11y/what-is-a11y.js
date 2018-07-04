@@ -32,13 +32,15 @@ export default class What extends React.Component {
 
         <hr textfont="secondary" style={{ width: "100%" }} />
 
-        <Text textColor="primary" style={styles.spacePlease}>
-          People with disabilities can perceive, understand, navigate, and interact with websites and tools, and they
-          can contribute equally without barriers.
+        <Text textColor="primary" style={[styles.spacePlease, { fontSize: "1.6em" }]}>
+          People with disabilities can <br />
+          perceive, understand, navigate, <br />
+          and interact with websites and tools, <br />
+          and they can contribute equally without barriers.
         </Text>
         <Link
           textColor="dktertiary"
-          style={[styles.smallText, { textAlign: "center", width: "100%" }]}
+          style={[styles.smallText, { textAlign: "center", width: "100%", textDecoration: "underline" }]}
           href="https://www.w3.org/WAI/intro/usable"
         >
           ~ W3C - Web Accessibility Initiative

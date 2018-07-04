@@ -13,7 +13,16 @@ import {
 } from "./aboutA11y";
 
 // Import Spectacle Core tags
-import { Deck, Fill, Heading, Layout, Link, Notes, Slide, Text } from "spectacle";
+import {
+  Deck,
+  Fill,
+  Heading,
+  Layout,
+  Link,
+  Notes,
+  Slide,
+  Text
+} from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -33,7 +42,9 @@ require("normalize.css");
 const themeColors = {
   primary: "#FAFAFA",
   secondary: "#191919",
-  tertiary: "#981804",
+  red: "#FF4E33",
+  green: "#2FC12F",
+  links: "deepskyblue",
   dktertiary: "deepskyblue",
   quartenary: "#FAFAFA",
   faded: "#CCCCCC",
@@ -48,21 +59,30 @@ const slideUrl = "http://be-a-react-native-a11y.surge.sh";
 export default class Presentation extends Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+      <Deck transitionDuration={500} theme={theme}>
         {/* Title Screen */}
         <Slide bgColor="faded" bgImage={images.JenDevDesk} bgDarken={0.7}>
           <Notes>
-            As speakers, we do our best, but sometimes slides are just too difficult to read. You can follow along at
+            As speakers, we do our best, but sometimes slides are just too
+            difficult to read. You can follow along at
             be-a-react-native-a11y.surge.sh
           </Notes>
           <Layout style={styles.flexCol}>
-            <Fill style={[styles.spacePlease]}>
-              <Heading fit textColor="primary" style={{ textShadow: "1px 1px 6px #111" }}>
+            <Fill style={styles.spacePlease}>
+              <Heading
+                fit
+                textColor="primary"
+                style={{ textShadow: "1px 1px 6px #111" }}
+              >
                 Be a React Native A11y
               </Heading>
             </Fill>
             <Fill style={styles.spacePlease}>
-              <Link textColor="dktertiary" style={styles.smallText} href={slideUrl}>
+              <Link
+                textColor="dktertiary"
+                style={styles.smallText}
+                href={slideUrl}
+              >
                 Follow along with the slides: {slideUrl}
               </Link>
             </Fill>
@@ -84,11 +104,22 @@ export default class Presentation extends Component {
         <WhyBusiness3 />
 
         {/* Conclusion */}
-        <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>
-          <Text textColor="dktertiary" style={[styles.largeText, styles.littleSpacePlease]}>
-            Accessibility isn't for just a select few. It's for everybody. It's for you.
+        <Slide
+          bgColor="#000000"
+          style={{ width: "100%", position: "relative" }}
+        >
+          <Text
+            textColor="dktertiary"
+            style={[styles.largeText, styles.littleSpacePlease]}
+          >
+            Accessibility isn't for just a select few. It's for everybody. It's
+            for you.
           </Text>
-          <Heading size={2} textColor="primary" style={styles.littleSpacePlease}>
+          <Heading
+            size={2}
+            textColor="primary"
+            style={styles.littleSpacePlease}
+          >
             Thank you
           </Heading>
         </Slide>

@@ -14,16 +14,16 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "normalize.css": "7.0.0",
+    "normalize.css": "8.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "spectacle": "^4.2.3",
+    "spectacle": "^4.3.1",
     "spectacle-renderer": "^0.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.3",
+    "babel-eslint": "^8.2.5",
     "babel-loader": "^7.1.4",
     "babel-plugin-react-transform": "^3.0.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
