@@ -20,7 +20,7 @@ export default class A11yIntro extends React.Component {
     return (
       <Slide bgColor="#070707" style={{ width: "100%", position: "relative" }}>
         <Heading textColor="quartenary">
-          Lets talk about accessibility in React Native
+          Accessibility Code in React Native
         </Heading>
       </Slide>
     );

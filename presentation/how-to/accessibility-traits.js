@@ -25,27 +25,15 @@ export default class A11yIntro extends React.Component {
         style={{ width: "100%", position: "relative" }}
       >
         <Heading size={3} textColor="red">
-          {"accessibility={true}"}
+          accessibilityTraits Prop (iOS)
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
         <Text
           style={[styles.standardText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
-          Set accessibilityLabel
-        </Text>
-
-        <Text
-          style={[styles.standardText, styles.littleSpacePlease]}
-          textColor="quartenary"
-        >
-          All content in block will be read at once
-        </Text>
-        <Text
-          style={[styles.standardText, styles.littleSpacePlease]}
-          textColor="quartenary"
-        >
-          no touchable* child elements can be clicked
+          tells a person using VoiceOver what kind of element they have
+          selected. Is this element a label? A button? A header?
         </Text>
       </Slide>
     );

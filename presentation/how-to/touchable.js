@@ -11,20 +11,29 @@ import styles from "../styles";
 // Require CSS
 import "normalize.css";
 const images = {
-  accessibilityGif: require("../../assets/AccessibilityGif.gif")
+  mobileDevices: require("../../assets/backgrounds/mobileDevices.jpg")
 };
 preloader(images);
 
 export default class A11yIntro extends React.Component {
   render() {
     return (
-      <Slide bgColor="#070707" style={{ width: "100%", position: "relative" }}>
+      <Slide
+        bgImage={images.mobileDevices}
+        bgDarken={0.85}
+        bgColor="#070707"
+        style={{ width: "100%", position: "relative" }}
+      >
         <Heading size={3} textColor="red">
           Touchable* components:
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
-        <Text style={styles.standardText} textColor="quartenary">
-          Set accessibilityTraits and accessibilityComponentType
+        <Text
+          style={[styles.standardText, styles.littleSpacePlease]}
+          textColor="quartenary"
+        >
+          Touchable* components are vulnerable to causing confusion with screen
+          readers
         </Text>
       </Slide>
     );

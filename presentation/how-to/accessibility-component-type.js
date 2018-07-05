@@ -25,27 +25,16 @@ export default class A11yIntro extends React.Component {
         style={{ width: "100%", position: "relative" }}
       >
         <Heading size={3} textColor="red">
-          {"accessibility={true}"}
+          accessibilityComponentType Prop (Android)
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
-        <Text
-          style={[styles.standardText, styles.littleSpacePlease]}
-          textColor="quartenary"
-        >
-          Set accessibilityLabel
-        </Text>
 
         <Text
           style={[styles.standardText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
-          All content in block will be read at once
-        </Text>
-        <Text
-          style={[styles.standardText, styles.littleSpacePlease]}
-          textColor="quartenary"
-        >
-          no touchable* child elements can be clicked
+          Alerts the end user of the type of selected component. We support
+          'none', ‘button’, ‘radiobutton_checked’ and ‘radiobutton_unchecked’.
         </Text>
       </Slide>
     );

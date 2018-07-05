@@ -12,6 +12,7 @@ import {
   WhyBusiness3
 } from "./aboutA11y";
 import { RNBasics, Touchable, AccessibleTrue } from "./how-to";
+import { ManualIntro } from "./manual-testing";
 
 import Resources from "./resources.js";
 
@@ -111,9 +112,13 @@ export default class Presentation extends Component {
         <WhyBusiness2 />
         <WhyBusiness3 />
 
+        {/* Accessibility Code */}
         <RNBasics />
         <Touchable />
         <AccessibleTrue />
+
+        {/* Manual Testing */}
+        <ManualIntro />
 
         {/* Conclusion */}
         <Slide
