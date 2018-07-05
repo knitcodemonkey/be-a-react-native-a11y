@@ -42,7 +42,7 @@ const meStyles = {
 export default class AboutMe extends Component {
   render() {
     return (
-      <Slide bgColor="faded" bgImage={images.JenDevDesk} bgDarken={0.7}>
+      <Slide bgColor="faded" bgImage={images.JenDevDesk} bgDarken={0.85}>
         <Notes>Software engineer, professionally, for over 10 years</Notes>
         <Layout style={{ flexWrap: "wrap" }}>
           <Fill style={{ minWidth: "230px" }}>

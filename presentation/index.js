@@ -11,6 +11,9 @@ import {
   WhyBusiness2,
   WhyBusiness3
 } from "./aboutA11y";
+import { RNBasics, Touchable, AccessibleTrue } from "./how-to";
+
+import Resources from "./resources.js";
 
 // Import Spectacle Core tags
 import {
@@ -61,23 +64,23 @@ export default class Presentation extends Component {
     return (
       <Deck transitionDuration={500} theme={theme}>
         {/* Title Screen */}
-        <Slide bgColor="faded" bgImage={images.JenDevDesk} bgDarken={0.7}>
+        <Slide bgColor="faded" bgImage={images.JenDevDesk} bgDarken={0.85}>
           <Notes>
             As speakers, we do our best, but sometimes slides are just too
             difficult to read. You can follow along at
             be-a-react-native-a11y.surge.sh
           </Notes>
           <Layout style={styles.flexCol}>
-            <Fill style={styles.spacePlease}>
+            <Fill style={styles.littleSpacePlease}>
               <Heading
                 fit
-                textColor="primary"
+                textColor="red"
                 style={{ textShadow: "1px 1px 6px #111" }}
               >
                 Be a React Native A11y
               </Heading>
             </Fill>
-            <Fill style={styles.spacePlease}>
+            <Fill style={styles.littleSpacePlease}>
               <Text
                 textColor="primary"
                 style={[
@@ -108,6 +111,10 @@ export default class Presentation extends Component {
         <WhyBusiness2 />
         <WhyBusiness3 />
 
+        <RNBasics />
+        <Touchable />
+        <AccessibleTrue />
+
         {/* Conclusion */}
         <Slide
           bgColor="#070707"
@@ -135,6 +142,8 @@ export default class Presentation extends Component {
             It's for you.
           </Heading>
         </Slide>
+
+        <Resources />
       </Deck>
     );
   }
