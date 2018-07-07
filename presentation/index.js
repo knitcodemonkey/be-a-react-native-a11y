@@ -13,6 +13,7 @@ import {
 } from "./aboutA11y";
 import { RNBasics, Touchable, AccessibleTrue } from "./how-to";
 import { ManualIntro } from "./manual-testing";
+import { AutomatedIntro } from "./automated-testing";
 import { AnnounceIntro, PluginRules } from "./announce";
 
 import Resources from "./resources.js";
@@ -120,6 +121,9 @@ export default class Presentation extends Component {
 
         {/* Manual Testing */}
         <ManualIntro />
+
+        {/* Automated Testing */}
+        <AutomatedIntro />
 
         {/* Introduce eslint-plugin-react-native-a11y */}
         <AnnounceIntro />
