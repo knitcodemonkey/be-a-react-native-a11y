@@ -6,7 +6,6 @@ import { Heading, Slide } from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
-import styles from "../styles";
 
 // Require CSS
 import "normalize.css";
@@ -24,3 +23,4 @@ export default class A11yIntro extends React.Component {
     );
   }
 }
+

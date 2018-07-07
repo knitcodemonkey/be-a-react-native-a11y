@@ -18,7 +18,12 @@ preloader(images);
 export default class A11yIntro extends React.Component {
   render() {
     return (
-      <Slide bgColor="#070707" style={{ width: "100%", position: "relative" }}>
+      <Slide
+        bgColor="#070707"
+        style={{ width: "100%", position: "relative" }}
+        bgImage={images.mobileDevices}
+        bgDarken={0.7}
+      >
         <Heading textColor="primary" style={styles.littleSpacePlease}>The web has axe-core.</Heading>
         <Heading textColor="primary" style={styles.littleSpacePlease}>What does React Native have?</Heading>
         <Heading textColor="red" style={styles.littleSpacePlease}>Uhhhh...</Heading>

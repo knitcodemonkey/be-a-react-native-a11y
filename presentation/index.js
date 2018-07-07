@@ -12,8 +12,8 @@ import {
   WhyBusiness3
 } from "./aboutA11y";
 import { RNBasics, Touchable, AccessibleTrue } from "./how-to";
-import { ManualIntro } from "./manual-testing";
-import { AutomatedIntro } from "./automated-testing";
+import { ManualIntro, IosInspector, AndroidTester } from "./manual-testing";
+import { AutomatedIntro, A11yLint, A11yTestingSuites, IosAutomated, AndroidAutomated } from "./automated-testing";
 import { AnnounceIntro, PluginRules } from "./announce";
 
 import Resources from "./resources.js";
@@ -121,9 +121,15 @@ export default class Presentation extends Component {
 
         {/* Manual Testing */}
         <ManualIntro />
+        <IosInspector />
+        <AndroidTester />
 
         {/* Automated Testing */}
         <AutomatedIntro />
+        <A11yTestingSuites />
+        <IosAutomated />
+        <AndroidAutomated />
+        <A11yLint />
 
         {/* Introduce eslint-plugin-react-native-a11y */}
         <AnnounceIntro />
