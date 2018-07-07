@@ -11,7 +11,7 @@ import styles from "./styles";
 // Require CSS
 import "normalize.css";
 const images = {
-  accessibilityGif: require("../assets/AccessibilityGif.gif")
+  accessibilityGif: require("../assets/aboutA11y/AccessibilityGif.gif")
 };
 preloader(images);
 

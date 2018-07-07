@@ -5,7 +5,7 @@ import { Heading, Slide, Text, Notes } from "spectacle";
 import preloader from "spectacle/lib/utils/preloader";
 import styles from "../styles";
 const images = {
-  wheelchair: require("../../assets/backgrounds/access-wheelchair.jpg")
+  wheelchair: require("../../assets/aboutA11y/access-wheelchair.jpg")
 };
 preloader(images);
 
@@ -15,7 +15,7 @@ require("normalize.css");
 export default class TypesOfDisability extends React.Component {
   render() {
     return (
-      <Slide bgImage={images.wheelchair} bgDarken={0.7}>
+      <Slide bgImage={images.wheelchair} bgDarken={0.8}>
         <Notes>
           <p>So, what is disability?</p>
         </Notes>

@@ -5,8 +5,7 @@ import { Heading, Slide, Notes } from "spectacle";
 import preloader from "spectacle/lib/utils/preloader";
 
 const images = {
-  wheelchair: require("../../assets/backgrounds/access-wheelchair.jpg"),
-  JenniferVan: require("../../assets/JenniferVan.jpg")
+  wheelchair: require("../../assets/aboutA11y/access-wheelchair.jpg")
 };
 preloader(images);
 

@@ -13,8 +13,10 @@ import {
 } from "./aboutA11y";
 import { RNBasics, Touchable, AccessibleTrue } from "./how-to";
 import { ManualIntro } from "./manual-testing";
+import { AnnounceIntro, PluginRules } from "./announce";
 
 import Resources from "./resources.js";
+import "prismjs/components/prism-powershell";
 
 // Import Spectacle Core tags
 import {
@@ -35,8 +37,7 @@ import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
 import styles from "./styles";
 const images = {
-  JenDevDesk: require("../assets/aboutme/JensDesk.jpg"),
-  JenDeskColor: require("../assets/aboutme/JensDeskColor.jpg")
+  JenDevDesk: require("../assets/aboutme/JensDesk.jpg")
 };
 preloader(images);
 
@@ -119,6 +120,10 @@ export default class Presentation extends Component {
 
         {/* Manual Testing */}
         <ManualIntro />
+
+        {/* Introduce eslint-plugin-react-native-a11y */}
+        <AnnounceIntro />
+        <PluginRules />
 
         {/* Conclusion */}
         <Slide

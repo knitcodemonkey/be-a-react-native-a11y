@@ -20,7 +20,7 @@ export default class A11yIntro extends React.Component {
     return (
       <Slide
         bgImage={images.mobileDevices}
-        bgDarken={0.85}
+        bgDarken={0.7}
         bgColor="#070707"
         style={{ width: "100%", position: "relative" }}
       >
