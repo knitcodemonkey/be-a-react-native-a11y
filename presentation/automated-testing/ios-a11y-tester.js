@@ -30,7 +30,7 @@ export default class A11yIntro extends React.Component {
           </ul>
         </Notes>
         <Heading fit textColor="red" fit>iOS Accessibility Inspector</Heading>
-        <Text>Use mouse to navigate as if VoiceOver is on, and run accessibility audits on a page.</Text>
+        <Text textColor="primary">Use mouse to navigate as if VoiceOver is on.<br />Run accessibility audits on a page.</Text>
         <List>
           <ListItem textColor="primary" style={[styles.smallText, { lineHeight: "2.8rem" }]}>Bring up Xcode.</ListItem>
           <ListItem textColor="primary" style={[styles.smallText, { lineHeight: "2.8rem" }]}>Navigate to the Open Developer Tool.</ListItem>

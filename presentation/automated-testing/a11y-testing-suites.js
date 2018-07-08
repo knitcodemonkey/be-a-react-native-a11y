@@ -24,9 +24,9 @@ export default class A11yIntro extends React.Component {
         bgImage={images.mobileDevices}
         bgDarken={0.7}
       >
-        <Heading textColor="primary" style={styles.littleSpacePlease}>The web has axe-core.</Heading>
-        <Heading textColor="primary" style={styles.littleSpacePlease}>What does React Native have?</Heading>
-        <Heading textColor="red" style={styles.littleSpacePlease}>Uhhhh...</Heading>
+        <Heading textColor="primary" fit>The web has axe-core.</Heading>
+        <Heading textColor="primary" fit>What does React Native have?</Heading>
+        <Heading textColor="red" style={styles.littleSpacePlease}>Uh...</Heading>
       </Slide>
     );
   }
