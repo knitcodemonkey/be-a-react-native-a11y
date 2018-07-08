@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import Spectacle Core tags
-import { Heading, Slide, Link, Image } from "spectacle";
+import { Heading, Slide, Link, Image, Layout, List, ListItem, Fill } from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -25,18 +25,35 @@ export default class A11yIntro extends React.Component {
         bgColor="#070707"
         style={{ width: "100%", position: "relative" }}
       >
+
         <Heading textColor="red" fit>Android Accessibility Scanner</Heading>
+        <Layout style={[styles.littleSpacePlease, { flexBasis: "auto" }]}>
+          <Fill style={{ width: "58%", flex: "auto" }}>
 
-        <Image height="70%" width="70%" src={images.androidA11yScanner} />
 
+            <List>
+              <ListItem textColor="primary" style={[styles.smallText, { lineHeight: "2.8rem" }]}>
+                Install <Link textColor="links" style={[styles.links, styles.smallText]} href="https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor">Accessibility Scanner</Link> app
+              </ListItem>
+              <ListItem textColor="primary" style={[styles.smallText, { lineHeight: "2.8rem" }]}>Navigate to Settings > Accessibility</ListItem>
+              <ListItem textColor="primary" style={[styles.smallText, { lineHeight: "2.8rem" }]}>Turn on Accessibility Scanner</ListItem>
+              <ListItem textColor="primary" style={[styles.smallText, { lineHeight: "2.8rem" }]}>Open your app</ListItem>
+              <ListItem textColor="primary" style={[styles.smallText, { lineHeight: "2.8rem" }]}>Tap the Accessibility Scanner button</ListItem>
+            </List>
+          </Fill>
+          <Fill style={{ width: "5%", flex: "auto" }} />
+          <Fill style={{ width: "37%", flex: "auto" }}>
+            <Image style={{ width: "100%", height: "auto" }} src={images.androidA11yScanner} />
+
+          </Fill>
+        </Layout>
         <Link
           textColor="links"
-          style={styles.links}
-          href="https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor"
+          style={[styles.links, styles.extraSmallText, styles.littleSpacePlease]}
+          href="https://developer.android.com/training/accessibility/testing"
         >
-          Accessibility Auditor on Google Play
+            Android Developer Docs: Accessibility Testing
         </Link>
-
       </Slide>
     );
   }
