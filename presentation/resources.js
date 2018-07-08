@@ -40,14 +40,6 @@ export default class Resources extends React.Component {
           <Link
             textColor="links"
             style={styles.links}
-            href="https://developer.paciellogroup.com/downloads/TPG_Mobile_Testing_Guide.pdf"
-          >
-            The Paciello Group: Mobile Testing Guide
-          </Link>
-
-          <Link
-            textColor="links"
-            style={styles.links}
             href="https://blogs.dropbox.com/tech/2017/04/creating-a-culture-of-accessibility/"
           >
             Dropbox: Creating a culture of accessibility
@@ -74,8 +66,7 @@ export default class Resources extends React.Component {
             style={styles.links}
             href="https://medium.com/@larenelg/creating-inclusive-apps-in-react-native-the-coding-bit-bd3832349009"
           >
-            React Native Accessibility: Creating Inclusive Apps in React
-            Native — the coding bit
+            React Native Accessibility: Creating Inclusive Apps in React Native — the coding bit
           </Link>
 
           <Link
@@ -83,8 +74,7 @@ export default class Resources extends React.Component {
             style={styles.links}
             href="https://www.deque.com/blog/introduction-native-mobile-accessibility-featuring-deque-university-iosandroid/"
           >
-            An Introduction to Native Mobile Accessibility – Featuring Deque
-            University for iOS/Android
+            An Introduction to Native Mobile Accessibility – Featuring Deque University for iOS/Android
           </Link>
         </Layout>
       </Slide>

@@ -24,7 +24,7 @@ export default class A11yIntro extends React.Component {
         bgColor="#070707"
         style={{ width: "100%", position: "relative" }}
       >
-        <Heading size={3} textColor="red">
+        <Heading fit textColor="red">
           accessibilityTraits Prop (iOS)
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
@@ -32,7 +32,7 @@ export default class A11yIntro extends React.Component {
           style={[styles.standardText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
-          tells a person using VoiceOver what kind of element they have
+          Tells a person using VoiceOver what kind of element they have
           selected. Is this element a label? A button? A header?
         </Text>
       </Slide>

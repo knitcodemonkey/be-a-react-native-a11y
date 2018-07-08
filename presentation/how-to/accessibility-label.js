@@ -25,22 +25,14 @@ export default class A11yIntro extends React.Component {
         style={{ width: "100%", position: "relative" }}
       >
         <Heading fit textColor="red">
-          accessibilityComponentType Prop (Android)
+          accessibilityLabel (iOS, Android)
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
-
         <Text
           style={[styles.standardText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
-          Tells the end user the selected component type:
-        </Text>
-
-        <Text
-          style={[styles.smallText, styles.littleSpacePlease]}
-          textColor="quartenary"
-        >
-          none, button, radiobutton_checked, radiobutton_unchecked
+          Concatenates all {"<"}Text{">"} content into a label || accessibilityLabel
         </Text>
       </Slide>
     );
