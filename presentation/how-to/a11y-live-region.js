@@ -24,30 +24,21 @@ export default class A11yIntro extends React.Component {
         bgColor="#070707"
         style={{ width: "100%", position: "relative" }}
       >
-        <Heading style={styles.standardText} textColor="red">
-        accessibilityViewIsModal (iOS)
-        </Heading>
-        <hr textfont="secondary" style={{ width: "100%" }} />
-        <Text
-          style={[styles.standardText, styles.littleSpacePlease]}
-          textColor="quartenary"
-        >
-          Hides sibling elements from screen readers.
-        </Text>
-
-        <Heading style={[styles.standardText, { paddingTop: "30px" }]} textColor="red">
-        accessibilityElementsHidden (iOS) /
-        </Heading>
         <Heading fit textColor="red">
-        importantForAccessibility="no-hide-descendants" (Android)
+        accessibilityLiveRegion (Android)
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
-
         <Text
           style={[styles.standardText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
-          Hides element from screen readers.
+        When components dynamically change, we want TalkBack to alert the end user.
+        </Text>
+        <Text
+          style={[styles.standardText, styles.littleSpacePlease]}
+          textColor="quartenary"
+        >
+        Options: none, polite, assertive
         </Text>
       </Slide>
     );

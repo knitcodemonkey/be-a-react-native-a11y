@@ -11,7 +11,7 @@ import {
   WhyBusiness2,
   WhyBusiness3
 } from "./aboutA11y";
-import { RNBasics, ExpectedBehavior, AlreadyDone, A11yOptions, AccessibleTrue, A11yTraits, VisibilityHidden, AccessibilityTap } from "./how-to";
+import { RNBasics, ExpectedBehavior, AlreadyDone, A11yOptions, AccessibleTrue, A11yTraits, VisibilityHidden, AccessibilityTap, A11yLiveRegion } from "./how-to";
 import { ManualIntro, ScreenReaders } from "./manual-testing";
 import { AutomatedIntro, A11yLint, A11yTestingSuites, IosInspector, AndroidScanner } from "./automated-testing";
 import { AnnounceIntro, PluginRules } from "./announce";
@@ -28,7 +28,8 @@ import {
   Link,
   Notes,
   Slide,
-  Text
+  Text,
+  Image
 } from "spectacle";
 
 // Import image preloader util
@@ -38,7 +39,8 @@ import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
 import styles from "./styles";
 const images = {
-  JenDevDesk: require("../assets/aboutme/JensDesk.jpg")
+  JenDevDesk: require("../assets/aboutme/JensDesk.jpg"),
+  beKind: require("../assets/beKind.png")
 };
 preloader(images);
 
@@ -129,6 +131,7 @@ export default class Presentation extends Component {
         <A11yTraits />
         <VisibilityHidden />
         <AccessibilityTap />
+        <A11yLiveRegion />
 
         {/* Automated Testing */}
         <AutomatedIntro />
@@ -142,31 +145,31 @@ export default class Presentation extends Component {
         <PluginRules />
 
         {/* Conclusion */}
-        <Slide
-          bgColor="#070707"
-          style={{ width: "100%", position: "relative" }}
-        >
-          <Heading
-            size={2}
-            textColor="dktertiary"
-            style={styles.littleSpacePlease}
-          >
-            Accessibility isn't for just a select few.
-          </Heading>
-          <Heading
-            size={2}
-            textColor="dktertiary"
-            style={styles.littleSpacePlease}
-          >
-            It's for everybody.
-          </Heading>
-          <Heading
-            size={2}
-            textColor="green"
-            style={[styles.littleSpacePlease, { fontStyle: "italic" }]}
-          >
-            It's for you.
-          </Heading>
+        <Slide>
+          <Notes>
+						Above all, remember that everyone you know is fighting
+						Javascript. Let's do what we can to make it a little
+						easier for everyone. Thank you.
+          </Notes>
+          <Layout style={{ display: "block" }}>
+            <Fill
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "relative"
+              }}
+            >
+              <Image
+                src={images.beKind}
+                style={{
+                  maxWidth: "60vw",
+                  maxHeight: "60vh",
+                  width: "auto",
+                  margin: "0 auto"
+                }}
+              />
+            </Fill>
+          </Layout>
         </Slide>
 
         <Resources />

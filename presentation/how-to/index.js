@@ -7,4 +7,5 @@ export { default as AccessibleTrue } from "./accessible-true";
 export { default as A11yTraits } from "./accessibility-traits";
 export { default as VisibilityHidden } from "./visibility-hidden";
 export { default as AccessibilityTap } from "./accessibility-tap";
+export { default as A11yLiveRegion } from "./a11y-live-region";
 

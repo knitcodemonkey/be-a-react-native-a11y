@@ -29,7 +29,7 @@ export default class A11yIntro extends React.Component {
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
         <Text
-          style={[styles.smallText, styles.littleSpacePlease]}
+          style={[styles.standardText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
           custom function when double tapping
@@ -41,10 +41,11 @@ export default class A11yIntro extends React.Component {
         <hr textfont="secondary" style={{ width: "100%" }} />
 
         <Text
-          style={[styles.smallText, styles.littleSpacePlease]}
+          style={[styles.standardText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
-          custom function when double tapping with two fingers
+          custom function when<br />
+          double tapping with two fingers
         </Text>
       </Slide>
     );
