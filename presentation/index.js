@@ -12,7 +12,7 @@ import {
   WhyBusiness3
 } from "./aboutA11y";
 import { RNBasics, ExpectedBehavior, AlreadyDone, A11yOptions, AccessibleTrue, A11yTraits, VisibilityHidden, AccessibilityTap, A11yLiveRegion } from "./how-to";
-import { ManualIntro, ScreenReaders } from "./manual-testing";
+import { ManualIntro, ScreenReaders, IosReader, AndroidReader } from "./manual-testing";
 import { AutomatedIntro, A11yLint, A11yTestingSuites, IosInspector, AndroidScanner } from "./automated-testing";
 import { AnnounceIntro, PluginRules } from "./announce";
 
@@ -122,6 +122,8 @@ export default class Presentation extends Component {
         {/* Manual Testing */}
         <ManualIntro />
         <ScreenReaders />
+        <IosReader />
+        <AndroidReader />
 
         {/* Accessibility Code */}
         <ExpectedBehavior />
