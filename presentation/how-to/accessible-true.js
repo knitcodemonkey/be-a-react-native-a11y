@@ -28,12 +28,7 @@ export default class A11yIntro extends React.Component {
           {"accessibility={true}"}
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
-        <Text
-          style={[styles.standardText, styles.littleSpacePlease]}
-          textColor="quartenary"
-        >
-          Set accessibilityLabel
-        </Text>
+
 
         <Text
           style={[styles.standardText, styles.littleSpacePlease]}
@@ -46,6 +41,12 @@ export default class A11yIntro extends React.Component {
           textColor="quartenary"
         >
           no touchable* child elements can be clicked
+        </Text>
+        <Text
+          style={[styles.standardText, styles.littleSpacePlease]}
+          textColor="quartenary"
+        >
+          Set accessibilityLabel
         </Text>
       </Slide>
     );

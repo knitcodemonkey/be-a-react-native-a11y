@@ -34,6 +34,11 @@ const Styles = {
     lineHeight: "1.6rem",
     textShadow: "1px 1px 4px #111"
   },
+  tooSmallText: {
+    fontSize: "1.0rem",
+    lineHeight: "1.2rem",
+    textShadow: "1px 1px 4px #111"
+  },
   smallText: {
     fontSize: "2rem",
     lineHeight: "2.4rem",
@@ -49,6 +54,11 @@ const Styles = {
     lineHeight: "2.4rem",
     textShadow: "1px 1px 4px #111",
     textDecoration: "underline"
+  },
+  listItems: {
+    fontSize: "1.0rem",
+    lineHeight: "1.2rem",
+    paddingBottom: "1rem"
   }
 };
 
