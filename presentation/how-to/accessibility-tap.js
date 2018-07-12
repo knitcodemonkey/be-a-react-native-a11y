@@ -25,18 +25,18 @@ export default class A11yIntro extends React.Component {
         style={{ width: "100%", position: "relative" }}
       >
         <Heading style={styles.standardText} textColor="red">
-          accessibilityTraits Prop (iOS)
+        onAccessibilityTap (iOS)
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
         <Text
           style={[styles.smallText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
-          Type of element they have selected
+          custom function when double tapping
         </Text>
 
         <Heading style={[styles.standardText, { paddingTop: "30px" }]} textColor="red">
-          accessibilityComponentType Prop (Android)
+        onMagicTap (iOS)
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
 
@@ -44,7 +44,7 @@ export default class A11yIntro extends React.Component {
           style={[styles.smallText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
-          Type of element in which users have made a selection
+          custom function when double tapping with two fingers
         </Text>
       </Slide>
     );

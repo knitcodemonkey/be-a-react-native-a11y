@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import Spectacle Core tags
-import { Heading, Slide, Link, Image } from "spectacle";
+import { Heading, Slide, Text, Image } from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -24,13 +24,16 @@ export default class A11yIntro extends React.Component {
         bgColor="#070707"
         style={{ width: "100%", position: "relative" }}
       >
-        <Heading size={4} textColor="red">
-          Thanks, React Native,
-        </Heading>
         <Heading size={3} textColor="red">
-          for accessible defaults
+          Accessible Defaults
         </Heading>
-        <Image src={images.allowFontScaling} style={[styles.littleSpacePlease, { width: "60%" }]} />
+        <hr textfont="secondary" style={{ width: "100%" }} />
+        <Text
+          style={[styles.smallText]}
+          textColor="quartenary"
+        >
+        allowFontScaling defaults to true
+        </Text>
       </Slide>
     );
   }

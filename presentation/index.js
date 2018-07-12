@@ -11,7 +11,7 @@ import {
   WhyBusiness2,
   WhyBusiness3
 } from "./aboutA11y";
-import { RNBasics, ExpectedBehavior, AlreadyDone, AccessibleTrue, A11yTraits, A11yComponentType } from "./how-to";
+import { RNBasics, ExpectedBehavior, AlreadyDone, A11yOptions, AccessibleTrue, A11yTraits, VisibilityHidden, AccessibilityTap } from "./how-to";
 import { ManualIntro, ScreenReaders } from "./manual-testing";
 import { AutomatedIntro, A11yLint, A11yTestingSuites, IosInspector, AndroidScanner } from "./automated-testing";
 import { AnnounceIntro, PluginRules } from "./announce";
@@ -116,17 +116,19 @@ export default class Presentation extends Component {
 
         {/* Accessibility Code */}
         <RNBasics />
-        <ExpectedBehavior />
-        <AlreadyDone/>
-        <AccessibleTrue />
-        <A11yTraits />
-        <A11yComponentType />
-
 
         {/* Manual Testing */}
         <ManualIntro />
         <ScreenReaders />
 
+        {/* Accessibility Code */}
+        <ExpectedBehavior />
+        <AlreadyDone/>
+        <A11yOptions />
+        <AccessibleTrue />
+        <A11yTraits />
+        <VisibilityHidden />
+        <AccessibilityTap />
 
         {/* Automated Testing */}
         <AutomatedIntro />

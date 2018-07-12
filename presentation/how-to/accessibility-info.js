@@ -24,24 +24,10 @@ export default class A11yIntro extends React.Component {
         bgColor="#070707"
         style={{ width: "100%", position: "relative" }}
       >
-        <Heading fit textColor="red">
-          accessibilityComponentType Prop (Android)
+        <Heading size={3} textColor="red">
+          Checking if a Screen Reader is Enabled: AccessibilityInfo
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
-
-        <Text
-          style={[styles.standardText, styles.littleSpacePlease]}
-          textColor="quartenary"
-        >
-          Tells the end user the selected component type:
-        </Text>
-
-        <Text
-          style={[styles.smallText, styles.littleSpacePlease]}
-          textColor="quartenary"
-        >
-          none, button, radiobutton_checked, radiobutton_unchecked
-        </Text>
       </Slide>
     );
   }

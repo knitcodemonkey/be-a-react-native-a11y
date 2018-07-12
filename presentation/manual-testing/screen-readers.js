@@ -19,8 +19,13 @@ preloader(images);
 export default class A11yIntro extends React.Component {
   render() {
     return (
-      <Slide bgColor="#070707" style={{ width: "100%", position: "relative" }}>
-        <Heading fit textColor="red">Activate Mobile Screen Readers</Heading>
+      <Slide
+        bgImage={images.mobileDevices}
+        bgDarken={0.7}
+        bgColor="#070707"
+        style={{ width: "100%", position: "relative" }}
+      >
+        <Heading fit textColor="red">Screen Reader Cheatsheets</Heading>
 
         <Image src={images.gestureCheatSheet} style={{ width: "75%", height: "auto" }} />
 

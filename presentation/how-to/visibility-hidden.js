@@ -25,18 +25,21 @@ export default class A11yIntro extends React.Component {
         style={{ width: "100%", position: "relative" }}
       >
         <Heading style={styles.standardText} textColor="red">
-          accessibilityTraits Prop (iOS)
+        accessibilityViewIsModal (iOS)
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
         <Text
           style={[styles.smallText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
-          Type of element they have selected
+          Boolean. Hides sibling elements from screen readers.
         </Text>
 
         <Heading style={[styles.standardText, { paddingTop: "30px" }]} textColor="red">
-          accessibilityComponentType Prop (Android)
+        accessibilityElementsHidden (iOS) /
+        </Heading>
+        <Heading fit textColor="red">
+        importantForAccessibility="no-hide-descendants" (Android)
         </Heading>
         <hr textfont="secondary" style={{ width: "100%" }} />
 
@@ -44,7 +47,7 @@ export default class A11yIntro extends React.Component {
           style={[styles.smallText, styles.littleSpacePlease]}
           textColor="quartenary"
         >
-          Type of element in which users have made a selection
+          Boolean. Hides element from screen readers.
         </Text>
       </Slide>
     );
