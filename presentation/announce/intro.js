@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../styles";
 
 // Import Spectacle Core tags
-import { Heading, Slide, Text, Link, Image, Fill } from "spectacle";
+import { Heading, Slide, Text, Link, Image, Layout, Fill } from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -27,17 +27,20 @@ export default class AboutMe extends React.Component {
         bgDarken={0.1}
         style={{ width: "100%", position: "relative" }}
       >
-        <Image src={images.formidable} style={{ width: "100%" }} />
+        <Heading style={styles.littleSpacePlease} textColor="red">It does now.</Heading>
 
-        <Text
-          textColor="red"
-          style={[styles.littleSpacePlease, styles.standardText]}
-        >
-          is pleased to announce...
+        <Heading fit textColor="links">eslint-plugin-react-native-a11y</Heading>
+
+        <Text textColor="primary" style={[styles.extraSmallText, styles.spacePlease]}>
+          Thank you, {" "}
+          <Link
+            textColor="links"
+            style={[styles.links, styles.extraSmallText, styles.littleSpacePlease]}
+            href="https://twitter.com/AlexJRsaunders"
+          >
+            @AlexJRsaunders
+          </Link>
         </Text>
-
-        <Heading style={{ paddingTop: "5px" }}fit textColor="links">eslint-plugin-react-native-a11y</Heading>
-
       </Slide>
     );
   }

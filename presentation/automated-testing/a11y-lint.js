@@ -24,8 +24,8 @@ export default class A11yIntro extends React.Component {
         bgImage={images.mobileDevices}
         bgDarken={0.7}
       >
-        <Heading size={3} textColor="primary" style={styles.littleSpacePlease}>Are there any a11y linting resources for React Native?</Heading>
-        <Heading textColor="red" style={styles.littleSpacePlease}>Nope.</Heading>
+        <Heading size={3} textColor="primary" style={styles.littleSpacePlease}>Are there any<br/> a11y linting resources<br /> for React Native?</Heading>
+        <Heading textColor="red" style={styles.littleSpacePlease}>No?</Heading>
       </Slide>
     );
   }
